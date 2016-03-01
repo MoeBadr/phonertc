@@ -6,7 +6,7 @@
 
 	<name>PhoneRTC</name>
 	<description></description>
-	<license></license>
+	<license>MIT</license>
 
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
@@ -24,7 +24,7 @@
 				<param name="ios-package" value="PhoneRTCPlugin" />
 			</feature>
 		</config-file>
-    		<header-file src="src/ios/Bridging-Header.h" />
+		<header-file src="src/ios/Bridging-Header.h" />
     		
 		<header-file src="src/ios/RTCAudioSource.h" />
 		<header-file src="src/ios/RTCAudioTrack.h" />	
