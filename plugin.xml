@@ -16,32 +16,14 @@
         	<clobbers target="cordova.plugins.phonertc" />
 	</js-module>
 	
-	<platform name="ios">
-		<info>---------------------
-PhoneRTC Installation
----------------------
-
-In order to install PhoneRTC on iOS, please follow these steps:
-
-1) Go platforms/ios and click on [ProjectName].xcodeproj to open it with XCode
-2) Go to your project settings
-3) In `General`, change `Deployment Target` to 7.0 or above
-4) Go to `Build Settings` and change:
-      `Objective-C Bridging Header` => 
-           [ProjectName]/Plugins/com.dooble.phonertc/Bridging-Header.h
-      `Runpath Search Paths` => 
-           $(inherited) @executable_path/Frameworks
-5) Go to `Build Phases` and unfold `Link Binary With Libraries`
-      `Add libicucore.dylib`
-
-		</info>
-		
+	<platform name="ios">		
 		<config-file target="config.xml" parent="/*">
 			<feature name="PhoneRTCPlugin">
 				<param name="ios-package" value="PhoneRTCPlugin" />
 			</feature>
 		</config-file>
-
+    		<header-file src="src/ios/Bridging-Header.h" />
+    		
 		<header-file src="src/ios/RTCAudioSource.h" />
 		<header-file src="src/ios/RTCAudioTrack.h" />	
 		<header-file src="src/ios/RTCDataChannel.h" />
