@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.moebadr.phonertc"
-    version="2.0.2">
+<plugin
+        xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-badr-webrtc"
+        version="2.0.7">
 
-	<name>PhoneRTC</name>
+	<name>WebRTC Cordova </name>
 	<description></description>
 	<license>MIT</license>
 
@@ -13,7 +14,7 @@
 	</engines>
 
 	<js-module src="www/phonertc.js" name="PhoneRTC">
-        	<clobbers target="cordova.plugins.phonertc" />
+        	<clobbers target="cordova-plugin-badr-webrtc" />
 	</js-module>
 	
 	<platform name="ios">
@@ -25,8 +26,8 @@
 			</feature>
 		</config-file>
 
-		<header-file src="src/ios/Bridging-Header.h" />
-    		
+        <header-file src="src/ios/cordova-plugin-badr-webrtc-Bridging-Header.h" />
+
 		<header-file src="src/ios/RTCAudioSource.h" />
 		<header-file src="src/ios/RTCAudioTrack.h" />	
 		<header-file src="src/ios/RTCDataChannel.h" />

@@ -1,0 +1,10 @@
+
+{
+  "name": "cordova-plugin-badr-webrtc",
+  "version": "2.0.7",
+  "description": "WebRTC for Cordova Meteor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MoeBadr/phonertc"
+  }
+}
