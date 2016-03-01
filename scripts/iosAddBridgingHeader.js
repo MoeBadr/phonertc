@@ -25,4 +25,4 @@ module.exports = function(context) {
   if (!regExp.test(data)) {
     fs.appendFileSync(projectBridgingHeaderPath, importDirective + "\n");
   }
-}
+};
